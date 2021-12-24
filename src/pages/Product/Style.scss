@@ -1,0 +1,66 @@
+.products {
+  margin: 0 10%;
+  $height: 80px;
+  height: calc(100vh - #{$height});
+  display: flex;
+}
+
+.catogery-list {
+  width: 25%;
+  background-color: burlywood;
+  height: 100%;
+
+  .catogery-list-card {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    border-bottom: 1px solid black;
+    align-items: center;
+    cursor: pointer;
+  }
+}
+
+#selected-catogey-card {
+  font-weight: bold;
+  border-bottom: 2px solid black;
+}
+.product-card-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 75%;
+  height: 100%;
+  overflow-y: scroll;
+
+  .product-card {
+    width: 45%;
+    margin-top: 40px;
+    border-bottom: 1px dotted gray;
+    .title {
+      height: 60px;
+      h1 {
+        font-size: 18px;
+      }
+    }
+    .info {
+      display: flex;
+      height: 200px;
+      img {
+        height: inherit;
+        width: 50%;
+        object-fit: cover;
+      }
+      .description {
+        padding: 15px;
+        overflow: hidden;
+        background-color: lightgray;
+        p {
+          font-size: 15px;
+        }
+      }
+    }
+    .primary-cta {
+      margin: 10px 0;
+    }
+  }
+}

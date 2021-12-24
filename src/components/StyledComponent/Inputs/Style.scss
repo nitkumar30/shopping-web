@@ -1,0 +1,15 @@
+.styled-input {
+  width: 100%;
+  p {
+    font-size: 12px;
+  }
+  input {
+    // margin-top: 5px;
+    width: 100%;
+    height: 30px;
+    font-size: 12px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid blue;
+  }
+}

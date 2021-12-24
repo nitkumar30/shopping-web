@@ -1,0 +1,25 @@
+.login {
+}
+
+.login-container {
+  display: flex;
+  padding: 0 10%;
+  margin-top: 80px;
+  .div1,
+  .div2 {
+    flex: 1;
+  }
+  .div1 {
+    h1 {
+      margin-bottom: 10px;
+    }
+  }
+  .div2 {
+    .styled-input {
+      margin-bottom: 10px;
+    }
+    .primary-cta {
+      margin-top: 15px;
+    }
+  }
+}

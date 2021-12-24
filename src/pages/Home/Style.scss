@@ -1,0 +1,34 @@
+.catogery-card {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  height: 180px;
+  margin: 20px 0;
+
+  box-shadow: 0px 15px 10px -15px #111;
+  .div1 {
+    text-align: center;
+    flex: 2;
+    h1 {
+      margin-top: 10px;
+    }
+    p {
+      margin-top: 10px;
+      color: #888888;
+    }
+    .primary-cta {
+      margin-top: 10px;
+      width: 40%;
+    }
+  }
+  .div2 {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.catogery-container {
+  margin: 0 15%;
+}
