@@ -12,12 +12,13 @@ export default function Product() {
   console.log("Parmas", params);
 
   useEffect(() => {
-    console.log("hii");
     if (params?.id) {
       const filteredData = products.filter((e) => e.category === params.id);
-      console.log("Filtered DAta", filteredData);
       setProduct(filteredData);
       setSelected(params.id);
+    } else {
+      setProduct(products);
+      setSelected("");
     }
   }, [params]);
 

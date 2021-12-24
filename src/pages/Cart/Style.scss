@@ -1,12 +1,12 @@
 .cart-page {
   height: calc(100vh - #{80px});
   width: 100%;
-  background-color: grey;
+  background-color: lightgray;
 
   .container {
     margin: 0 10%;
     height: calc(100vh - #{100px});
-    overflow-y: scroll;
+    overflow-y: auto;
     padding-top: 20px;
   }
 
@@ -33,7 +33,11 @@
   background-color: white;
   .logo {
     width: 15%;
-    background-color: yellow;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   }
   .content {
     width: 85%;
@@ -69,6 +73,31 @@
           font-weight: bold;
         }
       }
+    }
+  }
+}
+
+.cart-bottom-bar {
+  background-color: white;
+  margin-top: 30px;
+  text-align: center;
+  h1 {
+    height: 30px;
+    line-height: 30px;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  div {
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    background-color: brown;
+    align-items: center;
+    padding: 0 12px;
+    border-radius: 4px;
+    p {
+      font-size: 13px;
+      color: white;
     }
   }
 }

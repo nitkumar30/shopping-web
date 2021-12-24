@@ -28,9 +28,12 @@ export default function NavBar() {
 
       <div className="right">
         {isLogin ? (
-          <div>
+          <div className="user-info">
             <p>{`Welcome ${authUser.fname}`}</p>{" "}
-            <p onClick={handleLogout}>Logout</p>
+            <p onClick={handleLogout}>
+              {" "}
+              <span>Logout</span>
+            </p>
           </div>
         ) : (
           <div className="links">

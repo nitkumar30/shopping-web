@@ -1,6 +1,7 @@
 import React from "react";
 import PrimartyCta from "../../components/StyledComponent/PrimaryCTA";
 import { useNavigate } from "react-router-dom";
+import baby from "../../static/images/category/baby.png";
 import "./Style.scss";
 export default function Card({ index, data, img }) {
   const navigate = useNavigate();
@@ -19,6 +20,7 @@ export default function Card({ index, data, img }) {
       </div>
       <div className="div2">
         <img src={img} alt="not found" />
+        {/* <img src="../../static/images/category/baby.png" alt="not found" /> */}
       </div>
     </div>
   );

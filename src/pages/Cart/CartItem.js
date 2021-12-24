@@ -40,7 +40,9 @@ export default function CartItem({ item }) {
 
   return (
     <div className="cart-item">
-      <div className="logo"></div>
+      <div className="logo">
+        <img src="https://picsum.photos/100/150" alt="logo" />
+      </div>
       <div className="content">
         <h1> {item.name}</h1>
         <div className="info">
